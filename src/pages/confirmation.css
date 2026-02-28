@@ -1,0 +1,56 @@
+.confirmPage{
+
+    padding:40px;
+    
+    text-align:center;
+    
+    }
+    
+    
+    
+    .confirmTable{
+    
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:white;
+    
+    }
+    
+    
+    
+    .confirmTable th{
+    
+    background:#333;
+    color:white;
+    padding:10px;
+    
+    }
+    
+    
+    
+    .confirmTable td{
+    
+    border:1px solid #ccc;
+    padding:10px;
+    
+    }
+    
+    
+    
+    .abstractBox{
+    
+    margin-top:20px;
+    
+    border:1px solid gray;
+    
+    padding:20px;
+    
+    width:70%;
+    
+    margin-left:auto;
+    margin-right:auto;
+    
+    text-align:left;
+    
+    }

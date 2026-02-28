@@ -1,0 +1,115 @@
+.applicationPage {
+  padding: 40px;
+  background: #f4f4f4;
+}
+
+.teamTitle {
+  text-align: center;
+  color: #5c3db0;
+  margin-bottom: 25px;
+}
+
+.teamTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.teamTable th {
+  background: #333;
+  color: white;
+  padding: 12px;
+}
+
+.teamTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.teamTable input {
+  width: 90%;
+  padding: 8px;
+}
+
+.teamTable select {
+  width: 100%;
+  padding: 8px;
+}
+
+.addMemberDiv {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.addBtn {
+  background: #1976d2;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.leaderNote {
+  color: red;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.solutionBox {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.solutionBox textarea {
+  width: 80%;
+  height: 220px;
+  padding: 10px;
+}
+
+.uploadWrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.fileInput {
+  display: block;
+  margin: 1% 0% 1% 43%;
+}
+
+.pptNote {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.submitBtn {
+  display: block;
+  margin: 40px auto;
+  padding: 14px 40px;
+  background: green;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submitBtn:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.logoSection {
+  height: 60px;
+  padding: 10px 30px;
+  align-items: center;
+  gap: 40px;
+  display: flex;
+}
+.logoSection img{
+    height: 60px;
+}
+
+button:hover{
+    font-weight: 600;
+}

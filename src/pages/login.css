@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Background */
+
+.main-bg {
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Top Header */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 30px;
+
+  background: white;
+
+  box-shadow: 0px 2px 5px lightgray;
+}
+
+/* Logos */
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logos img {
+  height: 60px;
+}
+
+/* Buttons */
+
+.login-btn {
+  border: 1px solid orange;
+
+  padding: 8px 15px;
+
+  border-radius: 20px;
+
+  background: white;
+
+  margin-left: 10px;
+
+  cursor: pointer;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  padding: 15px;
+
+  background: #efefef;
+
+  color: #1b4de4;
+
+  font-weight: bold;
+}
+
+/* Login */
+
+.login-container {
+  text-align: center;
+
+  margin-top: 60px;
+}
+
+.login-box {
+  background: white;
+
+  padding: 30px;
+
+  width: 350px;
+
+  margin: auto;
+
+  border-radius: 5px;
+
+  box-shadow: 0px 0px 10px lightgray;
+}
+
+input,
+select {
+  width: 100%;
+
+  padding: 10px;
+
+  margin-top: 10px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+
+  width: 100%;
+
+  padding: 12px;
+
+  background: #28a745;
+
+  color: white;
+
+  border: none;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.forgot {
+  color: blue;
+
+  margin-top: 10px;
+}
+
+/* Footer */
+
+.footer {
+  background: black;
+
+  color: white;
+
+  padding: 20px;
+
+  margin-top: 150px;
+
+  display: flex;
+
+  justify-content: space-around;
+}
+input {
+  width: 93%;
+}
