@@ -9,24 +9,22 @@ function Header({showButtons}){
 
 return(
 
-<div className="header">
+<div className="headerWrapper">
+
+<div className="headerContainer">
 
 <div className="logoSection">
 
-<img src={moe} alt="moe"/>
-
-<img src={aicte} alt="aicte"/>
-
-<img src={mic} alt="mic"/>
-
-<img src={sih} alt="sih"/>
+<img src={moe} alt="MOE"/>
+<img src={aicte} alt="AICTE"/>
+<img src={mic} alt="MIC"/>
+<img src={sih} alt="SIH"/>
 
 </div>
 
-
 {showButtons && (
 
-<div className="buttonSection">
+<div className="headerButtons">
 
 <button>MIC Alumni</button>
 
@@ -36,6 +34,7 @@ return(
 
 )}
 
+</div>
 
 </div>
 

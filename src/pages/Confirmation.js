@@ -1,70 +1,46 @@
-import { useLocation } from "react-router-dom";
 import Header from "../components/Header";
+import { useLocation } from "react-router-dom";
+import "./confirmation.css";
 
-function Confirmation(){
+function Confirmation() {
+  const location = useLocation();
 
-const location=useLocation();
+  const members = location.state?.members || [];
+  const solution = location.state?.solution || "";
 
-const members=location.state?.members || [];
-const solution=location.state?.solution || "";
+  return (
+    <div>
+      <Header showButtons={false} />
 
-return(
+      <div className="confirmationPage">
+        <h2 className="successTitle">Application Submitted Successfully</h2>
 
-<div>
+        <h3 className="sectionTitle">Team Members</h3>
 
-<Header showButtons={false}/>
+        <table className="confirmTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
 
+          <tbody>
+            {members.map((m, index) => (
+              <tr key={index}>
+                <td>{m.name}</td>
+                <td>{m.email}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
 
-<div style={{padding:"40px"}}>
+        <h3 className="sectionTitle">Abstract</h3>
 
-<h2 align="center">
-
-Application Submitted Successfully
-
-</h2>
-
-
-
-<h3>
-
-Team Members
-
-</h3>
-
-
-{members.map((m,i)=>(
-
-<div key={i}>
-
-{m.name} - {m.email}
-
-</div>
-
-))}
-
-
-
-<h3 style={{marginTop:"30px"}}>
-
-Abstract
-
-</h3>
-
-
-<p>
-
-{solution}
-
-</p>
-
-
-</div>
-
-
-</div>
-
-);
-
+        <div className="abstractBox">{solution}</div>
+      </div>
+    </div>
+  );
 }
 
 export default Confirmation;

@@ -1,49 +1,68 @@
-.headerContainer{
+/* Full width wrapper */
 
-    background:#e6e6e6;
-    padding:10px 0;
-    text-align:center;
-    
-    }
-    
-    
-    
-    .logoRow{
-    
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:25px;   /* reduced spacing */
-    
-    }
-    
-    
-    
-    .logoRow img{
-    
-    height:60px;
-    
-    }
-    
-    
-    
-    .headerButtons{
-    
-    position:absolute;
-    right:40px;
-    top:15px;
-    
-    }
-    
-    
-    
-    .headerButtons button{
-    
-    margin-left:10px;
-    padding:8px 15px;
-    border-radius:20px;
-    border:2px solid orange;
-    background:white;
-    cursor:pointer;
-    
-    }
+.headerWrapper {
+  width: 100%;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Main header */
+
+.headerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 40px;
+
+  box-sizing: border-box;
+  margin-left: 1%;
+}
+
+/* Logos */
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logoSection img {
+  height: 60px;
+  width: auto;
+}
+
+/* Buttons (Login page only) */
+
+.headerButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.headerButtons button {
+  padding: 8px 18px;
+
+  border-radius: 20px;
+
+  border: 2px solid orange;
+
+  background: white;
+
+  cursor: pointer;
+
+  font-weight: 500;
+}
+
+.headerButtons button:hover {
+  background: orange;
+  color: white;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    margin-left: 1%;
+    box-shadow: 0px 2px 5px lightgray;
+}
